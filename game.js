@@ -312,15 +312,15 @@ var maze = function (X, Y) {
     i = cord[0];
     j = cord[1];
     j -= 1;
-    return this.Board[i][j] == " " ? true : false;
+    return this.Board[i][j] === ' '
   };
 
   this.moveDownPossible = function (id) {
     cord = this.checkPos(id);
-    i = cord[0];
+    i = cord[0]
     j = cord[1];
     j += 1;
-    return this.Board[i][j] == " " ? true : false;
+    return this.Board[i][j] === ' '
   };
 
   this.moveLeftPossible = function (id) {
@@ -328,7 +328,7 @@ var maze = function (X, Y) {
     i = cord[0];
     j = cord[1];
     i -= 1;
-    return this.Board[i][j] == " " ? true : false;
+    return this.Board[i][j] === ' '
   };
 
   this.moveRightPossible = function (id) {
@@ -336,7 +336,7 @@ var maze = function (X, Y) {
     i = cord[0];
     j = cord[1];
     i += 1;
-    return this.Board[i][j] == " " ? true : false;
+    return this.Board[i][j] === ' '
   };
 
   this.checker = function (id) {
